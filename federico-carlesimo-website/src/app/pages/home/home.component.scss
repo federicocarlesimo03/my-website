@@ -1,0 +1,41 @@
+.content-box {
+  // min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: auto;
+}
+
+.home {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.photo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 150px; /* Larghezza iniziale su schermi grandi */
+  height: 150px; /* Altezza iniziale per mantenere la proporzione circolare */
+  object-fit: cover; /* Adatta la foto all'interno del cerchio senza distorcerla */
+  max-width: 100%; /* Assicura che non superi la larghezza del contenitore */
+}
+
+@media (max-width: 768px) {
+  .profile-photo {
+    width: 120px; /* Dimensione ridotta su schermi medi */
+    height: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-photo {
+    width: 100px; /* Dimensione ridotta su schermi piccoli */
+    height: 100px;
+  }
+}

@@ -1,0 +1,52 @@
+<div class="container-fluid d-flex flex-column min-vh-100 home">
+  <div class="row flex-grow-1">
+    <!-- Prima Parte -->
+    <div class="col-lg-6 col-md-6 col-12 mb-4 d-flex">
+      <div
+        class="p-4 text-center flex-column flex-fill d-flex align-items-center justify-content-center"
+      >
+        <h2>
+          Hi there<br />
+          I am Federico!
+        </h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.
+        </p>
+      </div>
+    </div>
+
+    <!-- Seconda Parte -->
+    <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex">
+      <div
+        class="content-box p-4 text-center bg-light border rounded flex-fill d-flex align-items-center justify-content-center"
+      >
+        <div class="photo-wrapper">
+          <img
+            src="../../../assets/test-pic.jpg"
+            alt="Federico"
+            class="img-fluid rounded-circle profile-photo"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Terza Parte -->
+    <div class="col-lg-2 col-md-12 col-12 mb-4 d-flex">
+      <div
+        class="content-box p-4 text-center bg-light border rounded flex-fill"
+      >
+        <h3>Parte 3</h3>
+        <p>
+          <span [appCountUp]="100" [duration]="2000"></span> Projects Completed
+        </p>
+        <p><span [appCountUp]="7" [duration]="2000"></span> Years Experience</p>
+        <p>
+          <span [appCountUp]="99" [duration]="2000"></span> Satisfied Clients
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
